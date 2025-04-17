@@ -9,7 +9,7 @@ import { MemeModule } from './meme/meme.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
-      type: 'postgresql',
+      type: 'postgres',
       // host: process.env.DB_HOST,
       // port: +process.env.DB_PORT,
       // username: process.env.DB_USER,
