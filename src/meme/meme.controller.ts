@@ -21,8 +21,8 @@ export class MemeController {
   }
 
   @Get()
-  findAll() {
-    return this.memeService.findAll();
+  async findAll() {
+    return await this.memeService.findAll();
   }
 
   @Get(':id')

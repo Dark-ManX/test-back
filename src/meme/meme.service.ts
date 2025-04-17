@@ -16,8 +16,8 @@ export class MemeService {
     return 'This action adds a new meme';
   }
 
-  findAll() {
-    return this.memeRepository.find();
+  async findAll() {
+    return await this.memeRepository.find();
   }
 
   findOne(id: number) {
