@@ -22,6 +22,7 @@ export class MemeController {
 
   @Get()
   async findAll() {
+    console.log(this.memeService.findAll());
     return await this.memeService.findAll();
   }
 
