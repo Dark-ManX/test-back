@@ -10,9 +10,13 @@ import { MemeModule } from './meme/meme.module';
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DB_URL,
+      host: process.env.DB_HOST,
+      port: +process.env.DB_PORT,
+      username: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB,
+      // url: process.env.DB_URL,
       autoLoadEntities: true,
-      synchronize: true, // 👈 Додай або увімкни
     }),
     MemeModule,
   ],
