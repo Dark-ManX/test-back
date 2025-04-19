@@ -13,4 +13,7 @@ export class Meme {
 
   @Column('text', { array: true })
   properties: string[];
+
+  @Column()
+  likes: number;
 }

@@ -17,6 +17,7 @@ export class MemeService {
   }
 
   async findAll() {
+    console.log(this.memeRepository.find());
     return await this.memeRepository.find();
   }
 
