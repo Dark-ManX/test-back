@@ -17,16 +17,15 @@ export class MemeService {
   }
 
   async findAll() {
-    console.log(this.memeRepository.find());
     return await this.memeRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} meme`;
+  async findOne(id: number) {
+    return await this.memeRepository.findOneBy({ id });
   }
 
-  update(id: number, updateMemeDto: UpdateMemeDto) {
-    return `This action updates a #${id} meme`;
+  async update(id: number, updateMemeDto: UpdateMemeDto) {
+    return await this.memeRepository.update(id, updateMemeDto);
   }
 
   remove(id: number) {

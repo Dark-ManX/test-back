@@ -22,18 +22,17 @@ export class MemeController {
 
   @Get()
   async findAll() {
-    console.log(this.memeService.findAll());
     return await this.memeService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.memeService.findOne(+id);
+  async findOne(@Param('id') id: string) {
+    return await this.memeService.findOne(+id);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateMemeDto: UpdateMemeDto) {
-    return this.memeService.update(+id, updateMemeDto);
+  async update(@Param('id') id: string, @Body() updateMemeDto: UpdateMemeDto) {
+    return await this.memeService.update(+id, updateMemeDto);
   }
 
   @Delete(':id')
