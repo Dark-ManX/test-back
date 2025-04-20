@@ -25,7 +25,10 @@ export class MemeService {
   }
 
   async update(id: number, updateMemeDto: UpdateMemeDto) {
-    return await this.memeRepository.update(id, updateMemeDto);
+    console.log(updateMemeDto);
+    return await this.memeRepository.update(id, {
+      properties: updateMemeDto.properties,
+    });
   }
 
   remove(id: number) {
