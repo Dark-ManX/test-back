@@ -1,6 +1,5 @@
 import { MainLayout } from "@/components/layouts";
 import StoreProvider from "@/components/layouts/store-provider/StoreProvider";
-import { useGetMemesQuery } from "@/store/services/memesApi";
 import type { Metadata } from "next";
 import "./globals.css";
 

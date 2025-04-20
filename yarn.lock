@@ -283,6 +283,15 @@
     "@heroui/system" "2.4.13"
     "@heroui/use-measure" "2.1.6"
 
+"@heroui/image@^2.2.10":
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/@heroui/image/-/image-2.2.10.tgz#ef939b01b588e587b64f7cb60f7b6403fdb31555"
+  integrity sha512-02v0bJShCwaoXAjfMLGV900HsJ4J5YtW3OHJD/TIGWQzHNYxv7Mls4u2PyfUpk6IDimlZ+fIiEjfV0zR/HY3MA==
+  dependencies:
+    "@heroui/react-utils" "2.1.8"
+    "@heroui/shared-utils" "2.1.7"
+    "@heroui/use-image" "2.1.7"
+
 "@heroui/input@^2.4.17":
   version "2.4.17"
   resolved "https://registry.npmjs.org/@heroui/input/-/input-2.4.17.tgz"
@@ -443,7 +452,7 @@
     "@heroui/shared-utils" "2.1.7"
     "@heroui/system-rsc" "2.3.11"
 
-"@heroui/spinner@2.2.14":
+"@heroui/spinner@2.2.14", "@heroui/spinner@^2.2.14":
   version "2.2.14"
   resolved "https://registry.npmjs.org/@heroui/spinner/-/spinner-2.2.14.tgz"
   integrity sha512-NcKRh7UZgKbf+341ZvRJRyxwYn0pus7UdVQxOu/A7bYQh4AzNVemqc0+/6s96oOtuYGNMF3Kk2v+AyDtjhyTNQ==
@@ -554,6 +563,14 @@
   integrity sha512-mpsE2sR5atBwixRFzEshDsgqqT3bwsctABNZYK/1bKwjMRCpar+3ebuGQL7jzaKcvtgbLVXyclYZkacPd/1l2w==
   dependencies:
     "@react-aria/interactions" "3.24.1"
+
+"@heroui/use-image@2.1.7":
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@heroui/use-image/-/use-image-2.1.7.tgz#531b5123c200b74d1430fc9a6ecd0b36448ce78a"
+  integrity sha512-Cno8oXNo/3YDCRnCwSuJYgdsZ7mujjVWSwlYaoYbi+rM5o9TjZYRPYHZacHMABlbY+Hew31ddYpOmyw4SrkIwA==
+  dependencies:
+    "@heroui/react-utils" "2.1.8"
+    "@heroui/use-safe-layout-effect" "2.1.6"
 
 "@heroui/use-is-mobile@2.2.7":
   version "2.2.7"
