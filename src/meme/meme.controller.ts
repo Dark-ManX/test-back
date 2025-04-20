@@ -32,6 +32,7 @@ export class MemeController {
 
   @Patch(':id')
   async update(@Param('id') id: string, @Body() updateMemeDto: UpdateMemeDto) {
+    console.log(updateMemeDto);
     return await this.memeService.update(+id, updateMemeDto);
   }
 
